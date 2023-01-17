@@ -4,12 +4,18 @@
   color: #1ad1b9;
 }
 
+.buttonActive {
+  border-color: #1ad1b9;
+  background-color: #1a8ed1;
+  color: white;
+}
+
 .button:hover,
 .button:active {
   color: white;
 }
 
-.button span {
+.button span, .buttonActive span {
   margin: 0 0.5rem;
 }
 
