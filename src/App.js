@@ -27,7 +27,9 @@ function App() {
       return;
     }
 
-    dispatch(sendCartData(cart));
+    if (cart.changed) {
+      dispatch(sendCartData(cart));
+    }
   }, [cart, dispatch]);
 
   //POSSIBLE VARIANT OF HOW TO USE ASYNC WITH REDUX
